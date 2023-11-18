@@ -1,0 +1,119 @@
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+.maginBottom8 {
+  margin-bottom: 8px;
+}
+
+.fontSize {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background-color: #colors[backgroundColor];
+  color: #colors[corDoTexto];
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media @breakpointMobile {
+    max-width: 70%;
+  }
+  @media @breakpointTablet {
+    max-width: 80%;
+  }
+}
+
+header {
+  padding-bottom: 24px;
+
+  .imagem-perfil {
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  // .tecnologias{
+  //     display: flex;
+  //     justify-content: center;
+
+  // }
+
+  // img{
+  //         width: 40px;
+  //         margin-right: 15px;
+  //     }
+}
+
+.perfil-bio {
+  text-align: center;
+
+  &-name {
+    font-size: 20px;
+    .maginBottom8();
+  }
+  &-profissao {
+    font-size: 18px;
+    .maginBottom8();
+  }
+  &-descricao {
+    .fontSize();
+    opacity: 0.7;
+    .maginBottom8();
+  }
+}
+
+.nav-links {
+  list-style: none;
+  text-align: center;
+  // display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+
+  li {
+    border: 3px solid #colors[bottomColor];
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: #colors[bottomColor];
+    transition: all ease 0.5s;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  img {
+    padding-right: 20px;
+    transition: all ease 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #colors[corDoTexto];
+    .fontSize();
+    &:hover {
+      color: #ffffffa9;
+    }
+  }
+}

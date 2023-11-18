@@ -1,0 +1,94 @@
+.maginBottom8 {
+  margin-bottom: 8px;
+}
+.fontSize {
+  font-size: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background-color: #1B1464;
+  color: #f5f6fa;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .imagem-perfil {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.perfil-bio {
+  text-align: center;
+}
+.perfil-bio-name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.perfil-bio-profissao {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.perfil-bio-descricao {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+.nav-links {
+  list-style: none;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-links li {
+  border: 3px solid #273c75;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background-color: #273c75;
+  transition: all ease 0.5s;
+}
+.nav-links li:hover {
+  background-color: transparent;
+}
+.nav-links img {
+  padding-right: 20px;
+  transition: all ease 0.3s;
+}
+.nav-links img:hover {
+  transform: scale(1.1);
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f5f6fa;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: #ffffffa9;
+}
